@@ -64,7 +64,7 @@ const Footer = () => {
         <div className="border-t border-gray-600 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              © 2024 Medprev Manaus. Todos os direitos reservados.
+              © 2025 Medprev Manaus. Todos os direitos reservados.
             </p>
             <p className="text-gray-400 text-sm">
               Benefício de saúde empresarial para Manaus e região metropolitana
