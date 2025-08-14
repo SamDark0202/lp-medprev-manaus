@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Medprev Brand Colors */
+    --brand-blue: 214 95% 29%;        /* #0E3A8A */
+    --brand-blue-light: 217 91% 60%;  /* Lighter blue for hovers */
+    --brand-green: 142 71% 45%;       /* #16A34A */
+    --brand-green-hover: 142 76% 36%; /* Darker green for hover */
+    --hero-bg: 152 85% 16%;           /* #095232 - Nova cor do hero */
+    
+    /* Neutral System */
+    --background: 0 0% 100%;          /* #FFFFFF */
+    --foreground: 210 11% 15%;        /* #111827 */
+    --gray-light: 210 14% 97%;        /* #F5F7FA */
+    --gray-medium: 215 15% 65%;       /* Medium gray */
+    --gray-dark: 210 11% 15%;         /* #111827 */
+    
+    /* System Colors using brand palette */
+    --primary: var(--brand-green);
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: var(--brand-green-hover);
+    
+    --secondary: var(--brand-blue);
+    --secondary-foreground: 0 0% 100%;
+    --secondary-hover: var(--brand-blue-light);
+    
+    --card: 0 0% 100%;
+    --card-foreground: var(--foreground);
+    
+    --muted: var(--gray-light);
+    --muted-foreground: var(--gray-medium);
+    
+    --accent: var(--gray-light);
+    --accent-foreground: var(--foreground);
+    
+    --border: 210 20% 90%;
+    --input: 210 20% 90%;
+    --ring: var(--brand-green);
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --radius: 0.75rem;
+    
+    /* Custom Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--hero-bg)), hsl(152 75% 20%));
+    --gradient-cta: linear-gradient(135deg, hsl(var(--brand-green)), hsl(142 71% 40%));
+    --gradient-section: linear-gradient(180deg, hsl(var(--background)), hsl(var(--gray-light)));
+    
+    /* Shadows */
+    --shadow-soft: 0 4px 24px -2px hsl(var(--brand-blue) / 0.08);
+    --shadow-medium: 0 8px 32px -4px hsl(var(--brand-blue) / 0.12);
+    --shadow-strong: 0 16px 48px -8px hsl(var(--brand-blue) / 0.2);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .dark {
+    /* Keep light mode only for this landing page */
+    --background: 0 0% 100%;
+    --foreground: 210 11% 15%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    scroll-behavior: smooth;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+  
+  .gradient-cta {
+    background: var(--gradient-cta);
+  }
+  
+  .gradient-section {
+    background: var(--gradient-section);
+  }
+  
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+  
+  .shadow-medium {
+    box-shadow: var(--shadow-medium);
+  }
+  
+  .shadow-strong {
+    box-shadow: var(--shadow-strong);
+  }
+  
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+  
+  .transition-bounce {
+    transition: var(--transition-bounce);
+  }
+  
+  .touch-target {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
