@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Star, Quote } from "lucide-react";
 
 const SocialProofSection = () => {
-  const whatsappUrl = "https://oihe.in/l/heaW";
+  const whatsappUrl = "http://wa.me/5592982110001";
 
   const testimonials = [
     {
@@ -26,10 +26,10 @@ const SocialProofSection = () => {
   ];
 
   const partners = [
-    "Laboratório Central",
-    "Clínica São Lucas",
-    "Hospital Regional",
-    "Diagnósticos Amazonas"
+    "Laboratório CPDE",
+    "Clínica CMS",
+    "Laboratório RB",
+    "Mentalcor"
   ];
 
   return (

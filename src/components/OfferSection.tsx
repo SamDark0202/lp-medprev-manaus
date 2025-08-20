@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Gift, Clock } from "lucide-react";
 
 const OfferSection = () => {
-  const whatsappUrl = "https://oihe.in/l/heaW";
+  const whatsappUrl = "http://wa.me/5592982110001";
   
   // Calcular data dinâmica (30 dias a partir de hoje)
   const getOfferEndDate = () => {

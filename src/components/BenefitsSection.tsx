@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { UserMinus, TrendingUp, DollarSign, Heart } from "lucide-react";
 
 const BenefitsSection = () => {
-  const whatsappUrl = "https://oihe.in/l/heaW";
+  const whatsappUrl = "http://wa.me/5592982110001";
 
   const benefits = [
     {

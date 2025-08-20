@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { CreditCard, Users, FileText } from "lucide-react";
 
 const HowItWorksSection = () => {
-  const whatsappUrl = "https://oihe.in/l/heaW";
+  const whatsappUrl = "http://wa.me/5592982110001";
 
   const steps = [
     {

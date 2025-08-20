@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { MapPin, Phone, Mail } from "lucide-react";
 
 const Footer = () => {
-  const whatsappUrl = "https://oihe.in/l/heaW";
+  const whatsappUrl = "http://wa.me/5592982110001";
 
   return (
     <footer className="bg-gray-dark text-white py-16">
@@ -38,7 +38,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center">
                 <Phone className="w-5 h-5 text-brand-green mr-3 flex-shrink-0" />
-                <span className="text-gray-300">(92) 99524-2979</span>
+                <span className="text-gray-300">(92) 98211-0001</span>
               </div>
               <div className="flex items-center">
                 <Mail className="w-5 h-5 text-brand-green mr-3 flex-shrink-0" />

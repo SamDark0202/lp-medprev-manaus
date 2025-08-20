@@ -3,14 +3,14 @@ import { CheckCircle } from "lucide-react";
 import heroTeam from "@/assets/hero-team.jpg";
 
 const HeroSection = () => {
-  const whatsappUrl = "https://oihe.in/l/heaW";
+  const whatsappUrl = "http://wa.me/5592982110001";
 
   return (
     <section className="relative min-h-screen flex items-center gradient-hero overflow-hidden">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Logo */}
-          <div className="absolute top-6 left-4 lg:left-8">
+          <div className="absolute top-5 left-5 lg:left-8 z-20 pointer-events-none">
             <img 
               src="/lovable-uploads/Logo-Medprev-sem-bloco.png" 
               alt="Medprev Manaus - Benefício de Saúde Empresarial"
@@ -19,7 +19,7 @@ const HeroSection = () => {
           </div>
 
           {/* Content */}
-          <div className="text-white pt-20 lg:pt-0">
+          <div className="text-white pt-20 lg:pt-16">
             <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 leading-tight">
               Ofereça saúde de qualidade para seus colaboradores{" "}
               <span className="text-yellow-300">sem custo fixo mensal</span> — 
