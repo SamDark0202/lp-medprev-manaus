@@ -70,7 +70,7 @@ const SocialProofSection = () => {
         {/* Partners */}
         <div className="text-center mb-12">
           <h3 className="text-xl font-bold text-gray-dark mb-6">
-            Parceiros de Confiança em Manaus
+            Parceiros
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {partners.map((partner, index) => (
